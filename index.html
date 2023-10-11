@@ -15,7 +15,7 @@
     <title>Frontend Mentor | Meet landing page</title>
   </head>
   <body>
-    <header><img src="./assets/logo.svg" alt="logo" /></header>
+    <header></header>
 
     <main>
       <div id="top-info">
@@ -24,36 +24,24 @@
           Meet makes it easy to connect with others face-to-face virtually and
           collaborate across any device.
         </p>
-        <div id="buttonDiv">
+        <div class="buttonClass" id="buttonDiv">
           <button class="btn" id="downloadTop">
             Download<span>v1.3</span>
           </button>
           <button class="btn" id="whatIsIt">What is it?</button>
         </div>
-        <div class="0102" id="01">01</div>
+        <div class="circle0102" id="circle01"><span>01</span></div>
       </div>
 
       <div class="middle-images">
-        <img
-          id="1"
-          src="./assets/desktop/image-woman-in-videocall.jpg"
-          alt="woman-in-videocall"
-        />
-        <img
-          id="2"
-          src="./assets/desktop/image-women-videochatting.jpg"
-          alt="women-videochatting"
-        />
-        <img
-          id="3"
-          src="./assets/desktop/image-men-in-meeting.jpg"
-          alt="image-men-in-meeting.jpg"
-        />
-        <img
-          id="4"
-          src="./assets/desktop/image-man-texting.jpg"
-          alt="image-man-texting.jpg"
-        />
+        <div class="innerDiv">
+          <div class="images" id="image1"></div>
+          <div class="images" id="image2"></div>
+        </div>
+        <div class="innerDiv">
+          <div class="images" id="image3"></div>
+          <div class="images" id="image4"></div>
+        </div>
       </div>
 
       <div class="bottom-info">
@@ -65,20 +53,19 @@
           access, data encryption, and data export.
         </p>
       </div>
-
-      <footer>
-        <div class="0102" id="02">02</div>
-        <div class="opacityDiv">
-          <h2>Experience more together</h2>
-          <p>
-            Stay connected with reliable HD meetings and unlimited one-on-one
-            and group video sessions.
-          </p>
-          <button class="btn" id="downloadBottom">
-            Download<span>v1.3</span>
-          </button>
-        </div>
-      </footer>
     </main>
+    <footer>
+      <div class="circle0102" id="circle02"><span>02</span></div>
+      <div class="opacityDiv" id="opacityDivId">
+        <h2>Experience more together</h2>
+        <p>
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </p>
+        <button class="btn" id="downloadBottom">
+          Download<span>v1.3</span>
+        </button>
+      </div>
+    </footer>
   </body>
 </html>

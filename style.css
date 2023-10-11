@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap");
 
+html {
+  font-size: 10px;
+}
 body {
-  font-size: 62.5%;
   font-family: "Red Hat Display";
 }
 
@@ -10,20 +12,27 @@ button {
 }
 
 header {
-  padding: 4.8rem 12.8rem;
+  height: 33.1rem;
+  background-image: url(./assets/logo.svg), url(./assets/tablet/image-hero.png);
+  background-repeat: no-repeat;
+  background-position: top 4.8rem center, top 13rem center;
+  background-size: auto, 41.3rem auto;
 }
 
-/* main {
-  width: 100%;
-} */
-
-main #top-info {
-  padding: 0 2.4rem;
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  padding: 0 2.4rem;
+}
+
+main #top-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 #top-info h1 {
@@ -34,8 +43,469 @@ main #top-info {
   font-weight: 900;
   line-height: 4.4rem;
   width: 10ch;
-  margin-top: 25.5rem;
 }
 
 #top-info p {
+  color: #87879d;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem;
+  margin-top: 2.4rem;
+  width: 30ch;
+}
+
+main .buttonClass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 2.9rem;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.6rem;
+}
+
+#downloadTop {
+  padding: 1.6rem 4rem;
+  background: #4d96a9;
+  margin-top: 3.2rem;
+}
+
+#downloadTop span {
+  color: #8fe3f9;
+  margin-left: 0.4rem;
+}
+
+#whatIsIt {
+  padding: 1.6rem 2.9rem;
+  background: #855fb1;
+  margin-top: 1.6rem;
+}
+
+#downloadBottom {
+  background: #855fb1;
+  padding: 1.6rem 4rem;
+  margin-top: 3.2rem;
+}
+
+#downloadBottom span {
+  margin-left: 0.4rem;
+  color: #d9b8ff;
+}
+
+.circle0102 {
+  border-radius: 50px;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  background: #fafafa;
+  padding: 1.5rem 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle0102 span {
+  color: #87879d;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.6rem;
+}
+
+#circle01 {
+  position: absolute;
+  top: 50rem;
+}
+/*  middle section  */
+
+.middle-images {
+  margin-top: 26rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.images {
+  width: 151px;
+  height: 151px;
+  border-radius: 8px;
+}
+
+.innerDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+#image1 {
+  background-image: url(./assets/desktop/image-woman-in-videocall.jpg);
+  background-repeat: no-repeat;
+  background-size: 16rem auto;
+}
+
+#image2 {
+  background-image: url(./assets/desktop/image-women-videochatting.jpg);
+  background-repeat: no-repeat;
+  background-size: 16rem auto;
+}
+
+#image3 {
+  background-image: url(./assets/desktop/image-men-in-meeting.jpg);
+  background-repeat: no-repeat;
+  background-size: 16rem auto;
+}
+
+#image4 {
+  background-image: url(./assets/desktop/image-man-texting.jpg);
+  background-repeat: no-repeat;
+  background-size: 16rem auto;
+}
+
+/* Bottom Section  */
+
+.bottom-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-info h3 {
+  color: #4d96a9;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 2.6rem; /* 162.5% */
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-top: 6rem;
+}
+
+.bottom-info h2 {
+  color: #28283d;
+  text-align: center;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 3.6rem;
+  margin-top: 2.4rem;
+  width: 14ch;
+}
+
+.bottom-info p {
+  color: #87879d;
+  text-align: center;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem;
+  margin-top: 3.2rem;
+  width: 33ch;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 17.6rem;
+  background-image: url(./assets/mobile/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 428px;
+  width: 100%;
+  position: relative;
+  /* background: #4d96a9;
+  baopacity: 0.1045; */
+}
+
+footer .opacityDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: ;
+  width: 100%;
+}
+
+.opacityDiv h2 {
+  color: #fafafa;
+  text-align: center;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 3.6rem;
+}
+
+.opacityDiv p {
+  color: #fafafa;
+  text-align: center;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.6rem;
+  margin-top: 2.4rem;
+  width: 25ch;
+}
+
+#circle02 {
+  position: absolute;
+  top: -28px;
+}
+
+@media (min-width: 768px) {
+  header {
+    background-image: url(./assets/logo.svg),
+      url(./assets/tablet/image-hero.png);
+    background-position: top 4.8rem center, top 14rem center;
+    background-size: auto, 81.3rem auto;
+    height: 51.5rem;
+  }
+
+  main {
+    padding: 0 3.6rem;
+  }
+
+  #top-info h1 {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+  }
+
+  #top-info p {
+    width: 40ch;
+  }
+
+  #buttonDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.2rem;
+    gap: 1.6rem;
+  }
+
+  #downloadTop {
+    margin: 0;
+  }
+
+  #whatIsIt {
+    margin: 0;
+  }
+
+  /* middle section */
+
+  .middle-images {
+    margin-top: 28.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+  }
+
+  .images {
+    width: 168px;
+    height: 168px;
+    border-radius: 8px;
+  }
+
+  .innerDiv {
+    gap: 8px;
+  }
+
+  #image1 {
+    background-size: 18rem auto;
+  }
+
+  #image2 {
+    background-size: 18rem auto;
+  }
+
+  #image3 {
+    background-size: 18rem auto;
+  }
+
+  #image4 {
+    background-size: 18rem auto;
+  }
+
+  #circle01 {
+    top: 43rem;
+  }
+
+  /* Bottom section  */
+
+  .bottom-info {
+    margin-top: 4rem;
+  }
+
+  .bottom-info h2 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    width: 16ch;
+    margin-top: 1.6rem;
+  }
+
+  .bottom-info p {
+    width: 54ch;
+  }
+
+  /* footer */
+
+  footer {
+    margin-top: 19.4rem;
+    background-image: url(./assets/tablet/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .opacityDiv h2 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+  }
+
+  .opacityDiv p {
+    width: 47ch;
+    margin-top: 3.2rem;
+  }
+
+  .opacityDiv button {
+    margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(./assets/desktop/image-hero-left.png),
+      url(./assets/desktop/image-hero-right.png);
+    background-repeat: no-repeat;
+    background-position: top 16rem left -3.2rem, top 22.4rem right -3.2rem;
+    background-size: auto, auto;
+  }
+
+  header {
+    height: 21.6rem;
+    background-image: url(./assets/logo.svg);
+    background-position: top 4.8rem center;
+    background-size: auto;
+  }
+
+  main {
+    padding: 0 16.5rem;
+  }
+
+  #top-info h1 {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+  }
+
+  #top-info p {
+    font-size: 1.8rem;
+    width: 45ch;
+    margin-top: 3.4rem;
+  }
+
+  /* middle section */
+
+  .middle-images {
+    margin-top: 32rem;
+    gap: 3rem;
+  }
+
+  .images {
+    width: 255px;
+    height: 255px;
+    border-radius: 6px;
+  }
+
+  .innerDiv {
+    gap: 3rem;
+  }
+
+  #image1 {
+    background-size: 28rem auto;
+  }
+
+  #image2 {
+    background-size: 28rem auto;
+  }
+
+  #image3 {
+    background-size: 28rem auto;
+  }
+
+  #image4 {
+    background-size: 28rem auto;
+  }
+
+  /* bottom section */
+
+  .bottom-info {
+    margin-top: 8rem;
+  }
+
+  .bottom-info p {
+    width: 42ch;
+  }
+
+  footer {
+    margin-top: 18.4rem;
+    background-image: url(./assets/desktop/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #opacityDivId {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .opacityDiv h2 {
+    width: 14ch;
+    text-align: start;
+  }
+
+  .opacityDiv p {
+    width: 29ch;
+    text-align: start;
+    margin-top: 0;
+    margin-left: 12.5rem;
+    margin-right: 9.2rem;
+  }
+
+  #downloadBottom {
+    margin-top: 0;
+  }
+
+  #downloadTop:hover {
+    background: #71c0d4;
+    cursor: pointer;
+  }
+
+  #whatIsIt:hover {
+    background: #b18bdd;
+    cursor: pointer;
+  }
+
+  #downloadBottom:hover {
+    background: #b18bdd;
+    cursor: pointer;
+  }
 }
